@@ -1,0 +1,5 @@
+<%= form_for :session, url: sessions_path do |f| %>
+    <%= f.label :username, 'Enter a username' %><br/>
+    <%= f.text_field :username, value: 'user_' + SecureRandom.hex(4) %><br/>
+    <%= f.submit 'Start chatting' %>
+<% end %>
